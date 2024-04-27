@@ -2,7 +2,7 @@ function calculateMaturityAmount(){
     const principle = parseFloat(document.querySelector("#principle").value);
     const interestRate = parseFloat(document.querySelector("#interestRate").value);
     const tenure = parseFloat(document.querySelector("#tenure").value);
-    // ----- Validations ----- //
+    // ------ Validations ------ //
     if(isNaN(principle) || isNaN(interestRate) || isNaN(tenure)){
         if( (isNaN(principle) && (!isNaN(interestRate) && !isNaN(tenure))) ||  isNaN(principle) ){
             alert("The Principle value can not be null");
